@@ -2833,6 +2833,11 @@ SDO</text>
 <rectangle x1="95.6691" y1="53.2003" x2="95.8215" y2="53.2257" layer="21"/>
 <rectangle x1="95.7199" y1="53.2257" x2="95.7961" y2="53.2511" layer="21"/>
 <text x="0" y="-0.127" size="0.0508" layer="21" font="vector">/home/ztjohnst/Pictures/iconsv1.bmp</text>
+<text x="88.0618" y="29.8196" size="0.8128" layer="21" font="vector">Joshua Stevens
+Zach Johnston
+Ahmed Samara
+Eric Davis
+Hemanth Ambala</text>
 </plain>
 <libraries>
 <library name="Texas Instruments_By_element14_Batch_1">

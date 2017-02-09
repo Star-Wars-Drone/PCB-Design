@@ -13011,6 +13011,7 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21796H.pdf</description>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="U$4" library="DragonBoard" deviceset="DRAGON-BOARD-TH" device=""/>
 <part name="GND21" library="interface_board-rev13" deviceset="GND" device=""/>
+<part name="GND2" library="interface_board-rev13" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13830,6 +13831,7 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21796H.pdf</description>
 <instance part="C9" gate="G$1" x="109.22" y="182.88"/>
 <instance part="GND20" gate="1" x="106.68" y="167.64"/>
 <instance part="U$4" gate="A" x="40.64" y="187.96"/>
+<instance part="GND2" gate="1" x="7.62" y="177.8"/>
 </instances>
 <busses>
 </busses>
@@ -13881,13 +13883,6 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21796H.pdf</description>
 <wire x1="30.48" y1="195.58" x2="25.4" y2="195.58" width="0.1524" layer="91"/>
 <label x="25.4" y="195.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$4" gate="A" pin="3"/>
-</segment>
-</net>
-<net name="GND_CFILT" class="0">
-<segment>
-<wire x1="30.48" y1="193.04" x2="25.4" y2="193.04" width="0.1524" layer="91"/>
-<label x="25.4" y="193.04" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$4" gate="A" pin="5"/>
 </segment>
 </net>
 <net name="CDC_MIC3_P" class="0">
@@ -14063,6 +14058,12 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21796H.pdf</description>
 <pinref part="GND20" gate="1" pin="GND"/>
 <wire x1="106.68" y1="170.18" x2="106.68" y2="172.72" width="0.1524" layer="91"/>
 <junction x="106.68" y="172.72"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="A" pin="5"/>
+<wire x1="30.48" y1="193.04" x2="7.62" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="193.04" x2="7.62" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="CDC_MIC2_P" class="0">
