@@ -13264,12 +13264,6 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21796H.pdf</description>
 <part name="JP10" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="JP8" library="pinhead" deviceset="PINHD-1X5" device=""/>
 <part name="U$4" library="FT432H" deviceset="FT423H" device=""/>
-<part name="JP11" library="pinhead" deviceset="PINHD-1X4" device=""/>
-<part name="JP12" library="pinhead" deviceset="PINHD-1X4" device=""/>
-<part name="JP13" library="pinhead" deviceset="PINHD-1X4" device=""/>
-<part name="C31" library="rcl" deviceset="C-US" device="C0805"/>
-<part name="C32" library="rcl" deviceset="C-US" device="C0805"/>
-<part name="GND20" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13994,16 +13988,10 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21796H.pdf</description>
 <instance part="GND18" gate="1" x="241.3" y="127"/>
 <instance part="4.7UF5" gate="G$1" x="254" y="142.24"/>
 <instance part="GND19" gate="1" x="218.44" y="162.56"/>
-<instance part="U5" gate="A" x="81.28" y="25.4"/>
-<instance part="C1" gate="G$1" x="45.72" y="25.4"/>
-<instance part="JP8" gate="A" x="205.74" y="48.26"/>
+<instance part="U5" gate="A" x="-43.18" y="43.18"/>
+<instance part="C1" gate="G$1" x="-78.74" y="43.18"/>
+<instance part="JP8" gate="A" x="-2.54" y="22.86"/>
 <instance part="U$4" gate="G$1" x="144.78" y="104.14"/>
-<instance part="JP11" gate="A" x="226.06" y="48.26"/>
-<instance part="JP12" gate="A" x="246.38" y="48.26"/>
-<instance part="JP13" gate="A" x="271.78" y="48.26"/>
-<instance part="C31" gate="G$1" x="101.6" y="182.88"/>
-<instance part="C32" gate="G$1" x="109.22" y="182.88"/>
-<instance part="GND20" gate="1" x="106.68" y="167.64"/>
 </instances>
 <busses>
 </busses>
@@ -14199,43 +14187,17 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21796H.pdf</description>
 </segment>
 <segment>
 <pinref part="U5" gate="A" pin="GND"/>
-<wire x1="63.5" y1="15.24" x2="45.72" y2="15.24" width="0.1524" layer="91"/>
-<label x="43.18" y="15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-60.96" y1="33.02" x2="-78.74" y2="33.02" width="0.1524" layer="91"/>
+<label x="-81.28" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="45.72" y1="15.24" x2="43.18" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="20.32" x2="45.72" y2="15.24" width="0.1524" layer="91"/>
-<junction x="45.72" y="15.24"/>
+<wire x1="-78.74" y1="33.02" x2="-81.28" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="38.1" x2="-78.74" y2="33.02" width="0.1524" layer="91"/>
+<junction x="-78.74" y="33.02"/>
 </segment>
 <segment>
-<wire x1="203.2" y1="43.18" x2="193.04" y2="43.18" width="0.1524" layer="91"/>
-<label x="193.04" y="43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-5.08" y1="17.78" x2="-15.24" y2="17.78" width="0.1524" layer="91"/>
+<label x="-15.24" y="17.78" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="JP8" gate="A" pin="5"/>
-</segment>
-<segment>
-<wire x1="223.52" y1="45.72" x2="218.44" y2="45.72" width="0.1524" layer="91"/>
-<label x="218.44" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP11" gate="A" pin="4"/>
-</segment>
-<segment>
-<wire x1="243.84" y1="45.72" x2="238.76" y2="45.72" width="0.1524" layer="91"/>
-<label x="238.76" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP12" gate="A" pin="4"/>
-</segment>
-<segment>
-<wire x1="269.24" y1="45.72" x2="264.16" y2="45.72" width="0.1524" layer="91"/>
-<label x="264.16" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP13" gate="A" pin="4"/>
-</segment>
-<segment>
-<pinref part="C31" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="177.8" x2="101.6" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="172.72" x2="106.68" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="C32" gate="G$1" pin="2"/>
-<wire x1="106.68" y1="172.72" x2="109.22" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="172.72" x2="109.22" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="GND20" gate="1" pin="GND"/>
-<wire x1="106.68" y1="170.18" x2="106.68" y2="172.72" width="0.1524" layer="91"/>
-<junction x="106.68" y="172.72"/>
 </segment>
 </net>
 <net name="CDC_MIC2_P" class="0">
@@ -14257,8 +14219,8 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21796H.pdf</description>
 <junction x="33.02" y="132.08"/>
 </segment>
 <segment>
-<wire x1="203.2" y1="45.72" x2="193.04" y2="45.72" width="0.1524" layer="91"/>
-<label x="193.04" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-5.08" y1="20.32" x2="-15.24" y2="20.32" width="0.1524" layer="91"/>
+<label x="-15.24" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="JP8" gate="A" pin="4"/>
 </segment>
 </net>
@@ -14367,39 +14329,12 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21796H.pdf</description>
 </segment>
 <segment>
 <pinref part="U5" gate="A" pin="VCC"/>
-<wire x1="63.5" y1="30.48" x2="45.72" y2="30.48" width="0.1524" layer="91"/>
-<label x="40.64" y="30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-60.96" y1="48.26" x2="-78.74" y2="48.26" width="0.1524" layer="91"/>
+<label x="-83.82" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="30.48" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="27.94" x2="45.72" y2="30.48" width="0.1524" layer="91"/>
-<junction x="45.72" y="30.48"/>
-</segment>
-<segment>
-<wire x1="223.52" y1="48.26" x2="218.44" y2="48.26" width="0.1524" layer="91"/>
-<label x="218.44" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP11" gate="A" pin="3"/>
-</segment>
-<segment>
-<wire x1="243.84" y1="48.26" x2="238.76" y2="48.26" width="0.1524" layer="91"/>
-<label x="238.76" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP12" gate="A" pin="3"/>
-</segment>
-<segment>
-<wire x1="269.24" y1="48.26" x2="264.16" y2="48.26" width="0.1524" layer="91"/>
-<label x="264.16" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP13" gate="A" pin="3"/>
-</segment>
-<segment>
-<pinref part="C31" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="185.42" x2="101.6" y2="190.5" width="0.1524" layer="91"/>
-<pinref part="C32" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="190.5" x2="106.68" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="190.5" x2="109.22" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="190.5" x2="109.22" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="190.5" x2="106.68" y2="195.58" width="0.1524" layer="91"/>
-<junction x="106.68" y="190.5"/>
-<wire x1="106.68" y1="195.58" x2="101.6" y2="195.58" width="0.1524" layer="91"/>
-<label x="101.6" y="195.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-78.74" y1="48.26" x2="-83.82" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="45.72" x2="-78.74" y2="48.26" width="0.1524" layer="91"/>
+<junction x="-78.74" y="48.26"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -14547,114 +14482,32 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21796H.pdf</description>
 <net name="SBUS" class="0">
 <segment>
 <pinref part="U5" gate="A" pin="A"/>
-<wire x1="63.5" y1="25.4" x2="58.42" y2="25.4" width="0.1524" layer="91"/>
-<label x="58.42" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-60.96" y1="43.18" x2="-66.04" y2="43.18" width="0.1524" layer="91"/>
+<label x="-66.04" y="43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="203.2" y1="48.26" x2="193.04" y2="48.26" width="0.1524" layer="91"/>
-<label x="193.04" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-5.08" y1="22.86" x2="-15.24" y2="22.86" width="0.1524" layer="91"/>
+<label x="-15.24" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="JP8" gate="A" pin="3"/>
 </segment>
 </net>
-<net name="ADBUS_TX" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="ADBUS0"/>
-<wire x1="167.64" y1="134.62" x2="172.72" y2="134.62" width="0.1524" layer="91"/>
-<label x="172.72" y="134.62" size="1.27" layer="95" xref="yes"/>
-</segment>
+<net name="SBUS_TX" class="0">
 <segment>
 <pinref part="JP8" gate="A" pin="1"/>
-<wire x1="203.2" y1="53.34" x2="193.04" y2="53.34" width="0.1524" layer="91"/>
-<label x="193.04" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-5.08" y1="27.94" x2="-15.24" y2="27.94" width="0.1524" layer="91"/>
+<label x="-15.24" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="ADBUS_RX" class="0">
+<net name="SBUS_RX" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="ADBUS1"/>
-<wire x1="167.64" y1="132.08" x2="172.72" y2="132.08" width="0.1524" layer="91"/>
-<label x="172.72" y="132.08" size="1.27" layer="95" xref="yes"/>
+<wire x1="-5.08" y1="25.4" x2="-15.24" y2="25.4" width="0.1524" layer="91"/>
+<label x="-15.24" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="JP8" gate="A" pin="2"/>
 </segment>
 <segment>
 <pinref part="U5" gate="A" pin="Y"/>
-<wire x1="99.06" y1="30.48" x2="106.68" y2="30.48" width="0.1524" layer="91"/>
-<label x="106.68" y="30.48" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="203.2" y1="50.8" x2="193.04" y2="50.8" width="0.1524" layer="91"/>
-<label x="193.04" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP8" gate="A" pin="2"/>
-</segment>
-</net>
-<net name="BDBUS_TX" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="BDBUS0"/>
-<wire x1="167.64" y1="111.76" x2="172.72" y2="111.76" width="0.1524" layer="91"/>
-<label x="172.72" y="111.76" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="223.52" y1="53.34" x2="218.44" y2="53.34" width="0.1524" layer="91"/>
-<label x="218.44" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP11" gate="A" pin="1"/>
-</segment>
-</net>
-<net name="DDBUS_RX" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="DDBUS1"/>
-<wire x1="167.64" y1="63.5" x2="172.72" y2="63.5" width="0.1524" layer="91"/>
-<label x="172.72" y="63.5" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="269.24" y1="50.8" x2="264.16" y2="50.8" width="0.1524" layer="91"/>
-<label x="264.16" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP13" gate="A" pin="2"/>
-</segment>
-</net>
-<net name="CDBUS_TX" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="CDBUS0"/>
-<wire x1="167.64" y1="88.9" x2="172.72" y2="88.9" width="0.1524" layer="91"/>
-<label x="172.72" y="88.9" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="243.84" y1="53.34" x2="238.76" y2="53.34" width="0.1524" layer="91"/>
-<label x="238.76" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP12" gate="A" pin="1"/>
-</segment>
-</net>
-<net name="CDBUS_RX" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="CDBUS1"/>
-<wire x1="167.64" y1="86.36" x2="172.72" y2="86.36" width="0.1524" layer="91"/>
-<label x="172.72" y="86.36" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="243.84" y1="50.8" x2="238.76" y2="50.8" width="0.1524" layer="91"/>
-<label x="238.76" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP12" gate="A" pin="2"/>
-</segment>
-</net>
-<net name="DDBUS_TX" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="DDBUS0"/>
-<wire x1="167.64" y1="66.04" x2="172.72" y2="66.04" width="0.1524" layer="91"/>
-<label x="172.72" y="66.04" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="269.24" y1="53.34" x2="264.16" y2="53.34" width="0.1524" layer="91"/>
-<label x="264.16" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP13" gate="A" pin="1"/>
-</segment>
-</net>
-<net name="BDBUS_RX" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="BDBUS1"/>
-<wire x1="167.64" y1="109.22" x2="172.72" y2="109.22" width="0.1524" layer="91"/>
-<label x="172.72" y="109.22" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="223.52" y1="50.8" x2="218.44" y2="50.8" width="0.1524" layer="91"/>
-<label x="218.44" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP11" gate="A" pin="2"/>
+<wire x1="-25.4" y1="48.26" x2="-17.78" y2="48.26" width="0.1524" layer="91"/>
+<label x="-17.78" y="48.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>

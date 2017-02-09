@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -691,10 +691,10 @@
 <wire x1="42.3" y1="18.45" x2="42.4" y2="18.45" width="0.127" layer="22"/>
 <wire x1="43.1" y1="18.45" x2="43.2" y2="18.45" width="0.127" layer="22"/>
 <wire x1="43.9" y1="18.45" x2="44" y2="18.45" width="0.127" layer="22"/>
-<wire x1="0" y1="0" x2="85" y2="0" width="0.127" layer="51"/>
-<wire x1="85" y1="0" x2="85" y2="54" width="0.127" layer="51"/>
+<wire x1="0" y1="6.35" x2="85" y2="6.35" width="0.127" layer="51"/>
+<wire x1="85" y1="6.35" x2="85" y2="54" width="0.127" layer="51"/>
 <wire x1="85" y1="54" x2="0" y2="54" width="0.127" layer="51"/>
-<wire x1="0" y1="54" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="54" x2="0" y2="6.35" width="0.127" layer="51"/>
 <smd name="HS60" x="44.35" y="17.65" dx="2" dy="0.5" layer="16" rot="R270"/>
 <smd name="HS59" x="44.35" y="13.25" dx="2" dy="0.5" layer="16" rot="R270"/>
 <smd name="HS58" x="43.55" y="17.65" dx="2" dy="0.5" layer="16" rot="R270"/>
@@ -817,14 +817,6 @@
 <pad name="A14" x="64" y="51" drill="0.95"/>
 <pad name="A15" x="66" y="49" drill="0.95"/>
 <pad name="A16" x="66" y="51" drill="0.95"/>
-<wire x1="9" y1="53.15" x2="49" y2="53.15" width="0.127" layer="21"/>
-<wire x1="49" y1="53.15" x2="49" y2="46.85" width="0.127" layer="21"/>
-<wire x1="49" y1="46.85" x2="9" y2="46.85" width="0.127" layer="21"/>
-<wire x1="9" y1="46.85" x2="9" y2="53.15" width="0.127" layer="21"/>
-<wire x1="51" y1="53.15" x2="67" y2="53.15" width="0.127" layer="21"/>
-<wire x1="67" y1="53.15" x2="67" y2="46.85" width="0.127" layer="21"/>
-<wire x1="67" y1="46.85" x2="51" y2="46.85" width="0.127" layer="21"/>
-<wire x1="51" y1="46.85" x2="51" y2="53.15" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -995,138 +987,6 @@
 <connect gate="ANALOG" pin="7" pad="A7"/>
 <connect gate="ANALOG" pin="8" pad="A8"/>
 <connect gate="ANALOG" pin="9" pad="A9"/>
-<connect gate="HS" pin="1" pad="HS1"/>
-<connect gate="HS" pin="10" pad="HS10"/>
-<connect gate="HS" pin="11" pad="HS11"/>
-<connect gate="HS" pin="12" pad="HS12"/>
-<connect gate="HS" pin="13" pad="HS13"/>
-<connect gate="HS" pin="14" pad="HS14"/>
-<connect gate="HS" pin="15" pad="HS15"/>
-<connect gate="HS" pin="16" pad="HS16"/>
-<connect gate="HS" pin="17" pad="HS17"/>
-<connect gate="HS" pin="18" pad="HS18"/>
-<connect gate="HS" pin="19" pad="HS19"/>
-<connect gate="HS" pin="2" pad="HS2"/>
-<connect gate="HS" pin="20" pad="HS20"/>
-<connect gate="HS" pin="21" pad="HS21"/>
-<connect gate="HS" pin="22" pad="HS22"/>
-<connect gate="HS" pin="23" pad="HS23"/>
-<connect gate="HS" pin="24" pad="HS24"/>
-<connect gate="HS" pin="25" pad="HS25"/>
-<connect gate="HS" pin="26" pad="HS26"/>
-<connect gate="HS" pin="27" pad="HS27"/>
-<connect gate="HS" pin="28" pad="HS28"/>
-<connect gate="HS" pin="29" pad="HS29"/>
-<connect gate="HS" pin="3" pad="HS3"/>
-<connect gate="HS" pin="30" pad="HS30"/>
-<connect gate="HS" pin="31" pad="HS31"/>
-<connect gate="HS" pin="32" pad="HS32"/>
-<connect gate="HS" pin="33" pad="HS33"/>
-<connect gate="HS" pin="34" pad="HS34"/>
-<connect gate="HS" pin="35" pad="HS35"/>
-<connect gate="HS" pin="36" pad="HS36"/>
-<connect gate="HS" pin="37" pad="HS37"/>
-<connect gate="HS" pin="38" pad="HS38"/>
-<connect gate="HS" pin="39" pad="HS39"/>
-<connect gate="HS" pin="4" pad="HS4"/>
-<connect gate="HS" pin="40" pad="HS40"/>
-<connect gate="HS" pin="41" pad="HS41"/>
-<connect gate="HS" pin="42" pad="HS42"/>
-<connect gate="HS" pin="43" pad="HS43"/>
-<connect gate="HS" pin="44" pad="HS44"/>
-<connect gate="HS" pin="45" pad="HS45"/>
-<connect gate="HS" pin="46" pad="HS46"/>
-<connect gate="HS" pin="47" pad="HS47"/>
-<connect gate="HS" pin="48" pad="HS48"/>
-<connect gate="HS" pin="49" pad="HS49"/>
-<connect gate="HS" pin="5" pad="HS5"/>
-<connect gate="HS" pin="50" pad="HS50"/>
-<connect gate="HS" pin="51" pad="HS51"/>
-<connect gate="HS" pin="52" pad="HS52"/>
-<connect gate="HS" pin="53" pad="HS53"/>
-<connect gate="HS" pin="54" pad="HS54"/>
-<connect gate="HS" pin="55" pad="HS55"/>
-<connect gate="HS" pin="56" pad="HS56"/>
-<connect gate="HS" pin="57" pad="HS57"/>
-<connect gate="HS" pin="58" pad="HS58"/>
-<connect gate="HS" pin="59" pad="HS59"/>
-<connect gate="HS" pin="6" pad="HS6"/>
-<connect gate="HS" pin="60" pad="HS60"/>
-<connect gate="HS" pin="7" pad="HS7"/>
-<connect gate="HS" pin="8" pad="HS8"/>
-<connect gate="HS" pin="9" pad="HS9"/>
-<connect gate="LS" pin="1" pad="LS1"/>
-<connect gate="LS" pin="10" pad="LS10"/>
-<connect gate="LS" pin="11" pad="LS11"/>
-<connect gate="LS" pin="12" pad="LS12"/>
-<connect gate="LS" pin="13" pad="LS13"/>
-<connect gate="LS" pin="14" pad="LS14"/>
-<connect gate="LS" pin="15" pad="LS15"/>
-<connect gate="LS" pin="16" pad="LS16"/>
-<connect gate="LS" pin="17" pad="LS17"/>
-<connect gate="LS" pin="18" pad="LS18"/>
-<connect gate="LS" pin="19" pad="LS19"/>
-<connect gate="LS" pin="2" pad="LS2"/>
-<connect gate="LS" pin="20" pad="LS20"/>
-<connect gate="LS" pin="21" pad="LS21"/>
-<connect gate="LS" pin="22" pad="LS22"/>
-<connect gate="LS" pin="23" pad="LS23"/>
-<connect gate="LS" pin="24" pad="LS24"/>
-<connect gate="LS" pin="25" pad="LS25"/>
-<connect gate="LS" pin="26" pad="LS26"/>
-<connect gate="LS" pin="27" pad="LS27"/>
-<connect gate="LS" pin="28" pad="LS28"/>
-<connect gate="LS" pin="29" pad="LS29"/>
-<connect gate="LS" pin="3" pad="LS3"/>
-<connect gate="LS" pin="30" pad="LS30"/>
-<connect gate="LS" pin="31" pad="LS31"/>
-<connect gate="LS" pin="32" pad="LS32"/>
-<connect gate="LS" pin="33" pad="LS33"/>
-<connect gate="LS" pin="34" pad="LS34"/>
-<connect gate="LS" pin="35" pad="LS35"/>
-<connect gate="LS" pin="36" pad="LS36"/>
-<connect gate="LS" pin="37" pad="LS37"/>
-<connect gate="LS" pin="38" pad="LS38"/>
-<connect gate="LS" pin="39" pad="LS39"/>
-<connect gate="LS" pin="4" pad="LS4"/>
-<connect gate="LS" pin="40" pad="LS40"/>
-<connect gate="LS" pin="5" pad="LS5"/>
-<connect gate="LS" pin="6" pad="LS6"/>
-<connect gate="LS" pin="7" pad="LS7"/>
-<connect gate="LS" pin="8" pad="LS8"/>
-<connect gate="LS" pin="9" pad="LS9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="DRAGON-BOARD-TH">
-<gates>
-<gate name="A" symbol="20-PIN" x="-27.94" y="22.86"/>
-<gate name="LS" symbol="40-PIN" x="12.7" y="15.24"/>
-<gate name="HS" symbol="60-PIN" x="-68.58" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="DROGENBOARD-TH">
-<connects>
-<connect gate="A" pin="1" pad="A1"/>
-<connect gate="A" pin="10" pad="A10"/>
-<connect gate="A" pin="11" pad="A11"/>
-<connect gate="A" pin="12" pad="A12"/>
-<connect gate="A" pin="13" pad="A13"/>
-<connect gate="A" pin="14" pad="A14"/>
-<connect gate="A" pin="15" pad="A15"/>
-<connect gate="A" pin="16" pad="A16"/>
-<connect gate="A" pin="2" pad="A2"/>
-<connect gate="A" pin="3" pad="A3"/>
-<connect gate="A" pin="4" pad="A4"/>
-<connect gate="A" pin="5" pad="A5"/>
-<connect gate="A" pin="6" pad="A6"/>
-<connect gate="A" pin="7" pad="A7"/>
-<connect gate="A" pin="8" pad="A8"/>
-<connect gate="A" pin="9" pad="A9"/>
 <connect gate="HS" pin="1" pad="HS1"/>
 <connect gate="HS" pin="10" pad="HS10"/>
 <connect gate="HS" pin="11" pad="HS11"/>
